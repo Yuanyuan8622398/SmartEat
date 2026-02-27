@@ -29,7 +29,7 @@ SmartEat aims to solve this by providing instant food nutrition analysis using A
 
 ---
 
-## 💡 Solution
+## 💡 Implementation Details
 
 1. User uploads or scans a food image
 
