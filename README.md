@@ -77,13 +77,13 @@ The recommendation system retrieves nutrient deficiency data from Firebase and s
 ---
 
 ## Challenges Faced
-## 🎨 UI Design and Styling Iterations
+### 🎨 UI Design and Styling Iterations
 
 During the early development stage, the team did not finalize the UI design before implementing the frontend. As a result, the CSS styling had to be repeatedly modified whenever the layout or design changed.
 
 To resolve this issue, the team decided to finalize the UI design collaboratively before implementing the CSS, which significantly reduced unnecessary rework and improved development efficiency.
 
-##🔗 API Integration and Debugging
+### 🔗 API Integration and Debugging
 
 Another challenge occurred during the implementation of external APIs. Initially, the application produced incorrect outputs due to improper API integration and response handling.
 
