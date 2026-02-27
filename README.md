@@ -21,10 +21,7 @@ SmartEat aims to solve this by providing instant food nutrition analysis using A
 
 ## 💡 Solution
 
-Users upload a food image →  
-AI analyzes the food →  
-System displays estimated nutritional values →  
-Personalized dietary suggestions are provided.
+Users upload a food image →  AI analyzes the food →  System displays estimated nutritional values →  Personalized dietary suggestions are provided.
 
 ---
 
@@ -32,7 +29,7 @@ Personalized dietary suggestions are provided.
 
 - 📸 Food image upload
 - 🤖 AI-based food recognition
-- 📊 Nutrition analysis (calories, protein, fat, carbs)
+- 📊 Nutrition analysis (calories, protein, fat, carbs and others)
 - 🧠 Personalized dietary guidance
 - ⚡ Fast and easy decision-making support
 
@@ -40,8 +37,8 @@ Personalized dietary suggestions are provided.
 
 ## 🛠️ Technologies Used
 
-- Python
-- Streamlit
+- JavaScaript
+- HTML + CSS
 - TensorFlow / PyTorch
 - Nutrition dataset API
 - Machine Learning Model
