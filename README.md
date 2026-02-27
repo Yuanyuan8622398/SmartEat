@@ -65,6 +65,4 @@ Google Technology
 
 ---
 
-## 📄 License
 
-This project is for educational and hackathon purposes.
