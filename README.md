@@ -45,19 +45,19 @@ SmartEat aims to solve this by providing instant food nutrition analysis using A
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technical architecture
 
 The SmartEat system is composed of several key components:
 
-###Frontend
+### Frontend
 
 The frontend is built using HTML and CSS, providing a simple and user-friendly interface where users can upload food images, view nutritional analysis, and receive food recommendations.
 
-###Backend Logic
+### Backend Logic
 
 The application logic is implemented using JavaScript, which handles user interactions, processes AI responses, and manages data communication between the frontend and backend services.
 
-###AI Nutrition Analysis
+### AI Nutrition Analysis
 
 Food images uploaded by users are sent to Gemini AI, which analyzes the image and returns structured data including:
 - Food name
@@ -65,13 +65,13 @@ Food images uploaded by users are sent to Gemini AI, which analyzes the image an
 - Detected nutrient deficiencies
 This AI-driven analysis enables SmartEat to automatically evaluate users’ dietary intake.
 
-###Database and Cloud Services
+### Database and Cloud Services
 SmartEat uses Firebase as the backend database and cloud service. Firebase is responsible for:
 - Storing user nutrition records
 - Saving detected nutrient deficiencies
 - Supporting real-time data retrieval for recommendations
 
-###Recommendation Engine
+### Recommendation Engine
 The recommendation system retrieves nutrient deficiency data from Firebase and suggests suitable foods that can help users balance their nutrition intake.
 
 ---
