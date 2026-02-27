@@ -63,6 +63,7 @@ Food images uploaded by users are sent to Gemini AI, which analyzes the image an
 - Food name
 - Nutritional information
 - Detected nutrient deficiencies
+
 This AI-driven analysis enables SmartEat to automatically evaluate users’ dietary intake.
 
 ### Database and Cloud Services
