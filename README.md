@@ -37,51 +37,22 @@ Users upload a food image →  AI analyzes the food →  System displays estimat
 
 ## 🛠️ Technologies Used
 
+Frontend
+- HTML
+- CSS
+Backend
 - JavaScaript
-- HTML + CSS
-- TensorFlow / PyTorch
-- Nutrition dataset API
-- Machine Learning Model
+Google Technology
+- Gemini Ai
+- Google Maps
 
 ---
 
 ## 🖥️ How to Run This Project
 
-### 1️⃣ Clone the repository
+### 1️⃣ Download file
 
-git clone https://github.com/yourusername/smarteat.git
-
-### 2️⃣ Install dependencies
-
-pip install -r requirements.txt
-
-### 3️⃣ Run the application
-
-streamlit run app.py
-
----
-
-## 📊 Impact
-
-- Helps users make informed food decisions
-- Encourages healthier eating habits
-- Reduces nutrient deficiencies through personalized guidance
-
----
-
-## 📈 Results / Feedback
-
-- Users find nutrition information easier to understand
-- Faster decision-making when choosing meals
-
----
-
-## 🔮 Future Improvements
-
-- Real-time calorie tracking
-- Meal history dashboard
-- Integration with wearable devices
-- AI model accuracy improvement
+### 2️⃣ Run the index.html with live server in VS code
 
 ---
 
