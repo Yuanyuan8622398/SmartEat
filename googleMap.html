@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>SmartEat | Nearby Maps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-section">
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search for food or restaurant...">
+            <button id="searchBtn" class="search-btn">🔍 Search</button>
+        </div>
+    </div>
+
+    <div id="deficiencySection" class="deficiency-section" style="display: none;">
+        <h3 class="deficiency-title">⚡ Recommended for you</h3>
+        <div id="deficiencyTags" class="deficiency-tags"></div>
+    </div>
+
+    <div class="sort-section">
+        <span class="sort-label">Sort by:</span>
+        <div class="sort-options">
+            <button id="sortDistance" class="sort-btn active">📍 Distance</button>
+            <button id="sortPrice" class="sort-btn">💰 Price</button>
+            <button id="sortRating" class="sort-btn">⭐ Rating</button>
+        </div>
+    </div>
+
+    <div id="mapContainer" class="map-container">
+        <div id="map" class="map"></div>
+    </div>
+
+    <div id="restaurantList" class="restaurant-list"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA2r9SpnJYI2SytIuWgpCNuqpVM82CJs9U",
+            authDomain: "smarteat-kitahack2026.firebaseapp.com",
+            projectId: "smarteat-kitahack2026",
+            storageBucket: "smarteat-kitahack2026.firebasestorage.app",
+            messagingSenderId: "1070256092865",
+            appId: "1:1070256092865:web:a2fab330a22169f24a4640"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="header.js"></script>
+    <script src="googleMaps.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrtAAhcFyO9unxV4ZVxoIW31njlcANoKY&libraries=places,core&callback=initMap&loading=async"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartEat - Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h2>SmartEat</h2>
+        <p>Eat Smart, Live Health</p>
+        
+        <div class="form-section">
+            <div class="form-group">
+                <label>👤 Gender</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="form-group">
+                <label>🎂 Age <span class="required-mark">*</span></label>
+                <div class="input-icon-wrapper">
+                    <span class="input-icon">📅</span>
+                    <input type="text" id="age" name="Age" placeholder="e.g. 25" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>⚖️ Weight (kg) <span class="required-mark">*</span></label>
+                <div class="input-icon-wrapper">
+                    <span class="input-icon">🏋️</span>
+                    <input type="text" id="kg" name="Weight" placeholder="e.g. 65" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>📏 Height (m) <span class="required-mark">*</span></label>
+                <div class="input-icon-wrapper">
+                    <span class="input-icon">📐</span>
+                    <input type="text" id="height" name="height" placeholder="e.g. 1.75" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>🥗 Diet Preference</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="nveg" name="diet" value="Non-Vegetarian">
+                        <label for="nveg">Non-Vegetarian</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="veg" name="diet" value="Vegetarian">
+                        <label for="veg">Vegetarian</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>🕌 Food Type</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="halal" name="type" value="Halal">
+                        <label for="halal">Halal</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="n-halal" name="type" value="Non-halal">
+                        <label for="n-halal">Non-halal</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="health-tip">
+            <span class="health-tip-icon">💡</span>
+            <span class="health-tip-text">Your profile helps us personalize meal recommendations based on your body and preferences.</span>
+        </div>
+
+        <div class="button-group">
+            <a href="main.html" class="btn btn-secondary">
+                ← Cancel
+            </a>
+            <button id="saveProfileBtn" class="btn btn-primary">
+                💾 Save Profile
+            </button>
+        </div>
+
+        <div class="logout-section">
+            <button id="logoutBtn" class="logout-profile-btn">🚪 Logout</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA2r9SpnJYI2SytIuWgpCNuqpVM82CJs9U",
+            authDomain: "smarteat-kitahack2026.firebaseapp.com",
+            projectId: "smarteat-kitahack2026",
+            storageBucket: "smarteat-kitahack2026.firebasestorage.app",
+            messagingSenderId: "1070256092865",
+            appId: "1:1070256092865:web:a2fab330a22169f24a4640"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="header.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

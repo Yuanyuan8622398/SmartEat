@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#2B5F3A">
+    <title>SmartEat - Recommended Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="deficiency-summary">
+        <h2>🔍 Based on your scan</h2>
+        <div class="deficiency-tags" id="deficiencyTags"></div>
+        <p class="recommendation-intro">
+            We've found the best foods to help you meet your nutritional goals.
+        </p>
+    </div>
+
+    <div class="recommendations-container" id="recommendationsContainer">
+        <div class="meal-plan-section">
+            <div class="meal-plan-header">
+                <h2>🍽️ Your Meal Plan</h2>
+                <div class="meal-plan-actions">
+                    <button id="viewMealPlanBtn" class="view-btn">View Meal Plan</button>
+                    <button id="clearMealPlanBtn" class="clear-btn">Clear All</button>
+                </div>
+            </div>
+            <div id="mealPlanList" class="meal-plan-list" style="display: none;"></div>
+        </div>
+    </div>
+
+    <template id="recommendationCardTemplate">
+        <div class="recommendation-card">
+            <div class="food-image">
+                <div class="food-emoji">🍽️</div>
+            </div>
+            <div class="food-info">
+            <div class="food-header">
+                <h3 class="food-name">Food Name</h3>
+                <span class="food-nutrient">Target Nutrient</span>
+            </div>
+            <div class="food-description">Description of benefits and why this food is recommended.</div>
+            <div class="food-benefits">
+                <span class="benefit-tag">Benefit 1</span>
+                <span class="benefit-tag">Benefit 2</span>
+                <span class="benefit-tag">Benefit 3</span>
+            </div>
+            <div class="food-actions">
+                <button class="add-btn">➕ Add to Meal Plan</button>
+            </div>
+        </div>
+        </div>
+    </template>
+
+    <form id="dataForm" method="POST" style="display: none;">
+        <input type="hidden" name="scanData" id="scanData">
+        <input type="hidden" name="userId" id="userId">
+        <input type="hidden" name="selectedFoods" id="selectedFoods">
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA2r9SpnJYI2SytIuWgpCNuqpVM82CJs9U",
+            authDomain: "smarteat-kitahack2026.firebaseapp.com",
+            projectId: "smarteat-kitahack2026",
+            storageBucket: "smarteat-kitahack2026.firebasestorage.app",
+            messagingSenderId: "1070256092865",
+            appId: "1:1070256092865:web:a2fab330a22169f24a4640"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="header.js"></script>
+    <script src="recommended.js"></script>
+</body>
+</html>

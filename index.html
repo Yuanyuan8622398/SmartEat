@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartEat - Healthy Food Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-left">
+            <h1>Eat Smart, Live Healthy</h1>
+            <p>Your intelligent guide to better nutrition. Get personalized meal recommendations and discover healthy options near you.</p>
+            <a href="main.html" style="text-decoration: none;">
+                <button class="get-started-btn">Get Started →</button>
+            </a>
+        </div>
+        <div class="hero-right">
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2 class="section-title">What Our Users Say</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <img src="/picture/breakfast.jpg" alt="Breakfast">
+                <div class="review-content">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"I used to skip breakfast every day. Now I actually look forward to mornings! SmartEat's quick and healthy breakfast ideas keep me full and energized until lunch. Highly recommend!"</p>
+                    <div class="reviewer">- Sarah Johnson</div>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="/picture/lunch.jpg" alt="Lunch">
+                <div class="review-content">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"As someone who works 9-5, I always struggled with the afternoon slump. SmartEat suggests balanced lunches that don't weigh me down. I'm more productive and don't even need coffee anymore!"</p>
+                    <div class="reviewer">- Michael Chen</div>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="/picture/dinner.png" alt="Dinner">
+                <div class="review-content">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Dinner used to be my guilty pleasure — heavy and late. SmartEat helped me switch to lighter meals that are actually delicious. I sleep better, wake up refreshed, and my digestion has never been happier!"</p>
+                    <div class="reviewer">- Emily Rodriguez</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA2r9SpnJYI2SytIuWgpCNuqpVM82CJs9U",
+            authDomain: "smarteat-kitahack2026.firebaseapp.com",
+            projectId: "smarteat-kitahack2026",
+            storageBucket: "smarteat-kitahack2026.firebasestorage.app",
+            messagingSenderId: "1070256092865",
+            appId: "1:1070256092865:web:a2fab330a22169f24a4640"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="header.js"></script>
+</body>
+</html>

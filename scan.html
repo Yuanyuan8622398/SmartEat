@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartEat | Food Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mode-toggle">
+        <button id="cameraModeBtn" class="mode-btn active">📸 Camera</button>
+        <button id="uploadModeBtn" class="mode-btn">📁 Upload</button>
+    </div>
+
+    <div id="cameraSection" class="camera-section">
+        <div class="camera-container">
+            <video id="cameraStream" autoplay playsinline></video>
+        </div>
+        <button id="captureBtn" class="capture-btn">📸 Capture & Analyze</button>
+    </div>
+
+    <div id="uploadSection" class="upload-section">
+        <div id="uploadArea" class="upload-area">
+            <div class="upload-icon">📁</div>
+            <div class="upload-text">Click to upload or drag and drop</div>
+            <div class="upload-hint">Supports: JPG, PNG, GIF (Max 10MB)</div>
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        </div>
+        <button id="uploadBtn" class="capture-btn" style="margin-top: 16px;">📁 Select Image</button>
+
+        <div id="uploadPreview" class="upload-preview">
+            <img id="previewImage" src="" alt="Preview">
+            <div class="preview-actions">
+                <button id="removeImageBtn" class="preview-btn remove-btn">🗑️ Remove</button>
+                <button id="analyzeUploadBtn" class="preview-btn analyze-btn">🔍 Analyze</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="analysisResult" class="analysis-result">
+        <div class="result-card">
+            <div class="result-header">
+                <h2 class="result-title">Analysis Result</h2>
+                <button id="closeResultBtn" class="close-btn">✕</button>
+            </div>
+
+            <div class="food-info">
+                <div class="food-icon" id="foodIcon">🍔</div>
+                <div class="food-details">
+                    <div class="food-name" id="foodName">Loading...</div>
+                    <div class="food-brand" id="foodBrand"></div>
+                </div>
+            </div>
+
+            <div class="score-card">
+                <div class="score-value" id="nutritionScore">85</div>
+                <div class="score-label">Nutrition Score</div>
+                <div class="score-bar">
+                    <div class="score-fill" id="scoreBar" style="width: 85%"></div>
+                </div>
+                <div class="score-grade grade-a" id="scoreGrade">A</div>
+            </div>
+
+            <h3 class="section-title">Nutrition Facts</h3>
+            <div id="nutritionList" class="nutrition-list"></div>
+
+            <div id="deficiencyAlert" class="deficiency-alert">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    <div class="alert-title">Potential Deficiencies</div>
+                    <div id="deficiencyTags" class="deficiency-tags"></div>
+                </div>
+            </div>
+
+            <h3 class="section-title">Recommendations</h3>
+            <div id="recommendationContent" class="recommendations-list"></div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA2r9SpnJYI2SytIuWgpCNuqpVM82CJs9U",
+            authDomain: "smarteat-kitahack2026.firebaseapp.com",
+            projectId: "smarteat-kitahack2026",
+            storageBucket: "smarteat-kitahack2026.firebasestorage.app",
+            messagingSenderId: "1070256092865",
+            appId: "1:1070256092865:web:a2fab330a22169f24a4640"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="header.js"></script>
+    <script src="scan.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartEat - Main</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="feature-container">
+        <div class="feature-card">
+            <a href="recommendedFood.html" class="feature-link">
+                <div class="feature-icon">🥗</div>
+                <h3>Recommended Food</h3>
+                <p>Personalized meals just for you</p>
+            </a>
+        </div>
+        <div class="feature-card">
+            <a href="googleMap.html" class="feature-link">
+                <div class="feature-icon">🗺️</div>
+                <h3>Nearby Maps</h3>
+                <p>Discover healthy restaurants near you</p>
+            </a>
+        </div>
+        <div class="feature-card">
+            <a href="scan.html" class="feature-link">
+                <div class="feature-icon">📷</div>
+                <h3>Smart Scan</h3>
+                <p>Scan food labels for instant analysis</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="health-section">
+        <h2 class="section-title">Your Health Report</h2>
+        <div class="health-container">
+            <div class="health-card bmi-card">
+                <h3>📊 BMI</h3>
+                <div class="bmi-value">--</div>
+                <div class="bmi-status">Loading...</div>
+                <div class="bmi-range">Fetching your health data</div>
+                <button class="health-btn">Update</button>
+            </div>
+            
+            <div class="health-card nutrients-card">
+                <h3>🥬 Missing Nutrients</h3>
+                <ul class="nutrients-list">
+                    <li style="display: flex; justify-content: center; padding: 20px; color: #5a7c63;">
+                        ⏳ Loading your nutrition data...
+                    </li>
+                </ul>
+                <button class="health-btn">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA2r9SpnJYI2SytIuWgpCNuqpVM82CJs9U",
+            authDomain: "smarteat-kitahack2026.firebaseapp.com",
+            projectId: "smarteat-kitahack2026",
+            storageBucket: "smarteat-kitahack2026.firebasestorage.app",
+            messagingSenderId: "1070256092865",
+            appId: "1:1070256092865:web:a2fab330a22169f24a4640"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="header.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
