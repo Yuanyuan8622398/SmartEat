@@ -1,11 +1,11 @@
 # 🍎 SmartEat AI  
-AI-Powered Food Recognition & Nutrition Analysis System
+Welcome to AI-Powered Food Recognition & Nutrition Analysis System
 
 ---
 
 ## 📌 Project Overview
 
-SmartEat is an AI-powered application that analyzes food images and provides detailed nutritional information.  
+Our SmartEat is an AI-powered application that analyzes food images and provides detailed nutritional information.  
 The system helps users make informed food decisions and encourages healthier eating habits.
 
 ---
