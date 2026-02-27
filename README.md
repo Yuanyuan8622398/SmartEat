@@ -19,12 +19,6 @@ SmartEat aims to solve this by providing instant food nutrition analysis using A
 
 ---
 
-## 💡 Solution
-
-Users upload a food image →  AI analyzes the food →  System displays estimated nutritional values →  Personalized dietary suggestions are provided.
-
----
-
 ## 🚀 Features
 
 - 📸 Food image upload
@@ -32,6 +26,22 @@ Users upload a food image →  AI analyzes the food →  System displays estimat
 - 📊 Nutrition analysis (calories, protein, fat, carbs and others)
 - 🧠 Personalized dietary guidance
 - ⚡ Fast and easy decision-making support
+
+---
+
+## 💡 Solution
+
+1. User uploads or scans a food image
+
+2. Image is sent to Gemini AI for analysis
+
+3. Gemini returns food name, nutrition data, and nutrient deficiencies
+
+4. Deficiency data is stored in Firebase
+
+5. Recommendation system retrieves deficiency data
+
+6. SmartEat displays personalized food recommendations
 
 ---
 
