@@ -91,6 +91,14 @@ To overcome this, additional time was spent researching and understanding the co
 
 ---
 
+## 🚀 Future Roadmap
+
+In the future, SmartEat aims to enhance its AI-powered food analysis by improving food recognition accuracy and expanding the nutrition database to support a wider variety of dishes, especially local Malaysian cuisine. We also plan to refine the nutrient analysis pipeline to provide more precise dietary insights and better detection of nutrient deficiencies. Additionally, SmartEat could integrate real-time restaurant menu data and location services to deliver more accurate and context-aware food recommendations.
+
+Beyond the current prototype, SmartEat has the potential to evolve into a comprehensive personal nutrition assistant platform. Future developments may include a mobile application, a personal nutrition tracking dashboard, and integration with wearable health devices to monitor users’ dietary patterns over time. These improvements would allow SmartEat to provide smarter recommendations and help users maintain healthier lifestyles through continuous data-driven guidance.
+
+---
+
 ## 🖥️ How to Run This Project
 
 ### 1️⃣ Download file
@@ -99,8 +107,11 @@ To overcome this, additional time was spent researching and understanding the co
 
 ---
 
-## 👥 Team Members
+## 👥 Our Team
 
+### Team Name : jet2holiday
+
+### Team Member:
 - Chun Zhen Yao
 - Chai Xin Yi
 - Chai Yi Cheng
