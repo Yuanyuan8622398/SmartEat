@@ -114,8 +114,8 @@ Beyond the current prototype, SmartEat has the potential to evolve into a compre
 ### Team Member:
 - Chun Zhen Yao
 - Chai Xin Yi
-- Chai Yi Cheng
-- Tan Xin Yu
+- Chai Yi Cheng (GDGoC Member from UM)
+- Tan Xin Yu (GDGoC Member from TARUMT)
 
 ---
 
